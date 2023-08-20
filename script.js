@@ -13,7 +13,7 @@ function cal(){
         alert('Todos os campos são obrigatorios!');
        }
     } else{
-        let imc = peso.value / (altura.value * altura.value).toFixed(2);
+        let imc = parseInt(peso.value / (altura.value * altura.value));
         let classificacao = ''
         if ( imc < 18.5){
             classificacao = "você está abaixo do peso"
